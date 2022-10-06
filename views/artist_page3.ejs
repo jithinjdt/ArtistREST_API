@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title></title>
+    </head>
+    <body>
+        <form action='/artist.search/123' method = "post"></form>
+        <div class="container">
+            <h1 class="text-center mt-3 mb-3"></h1> 
+            <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">Artist details </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                 
+                    <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Name</th>
+                                <th>mbid</th>
+                                <th>image_small</th>
+                                <th>image</th>
+                            </tr>
+                            <%
+                            if(sampleData.length > 0)
+                            {
+                                sampleData.forEach(function(data){
+                            %>
+                            <tr>
+                                <td><%= data.name %></td>
+                                <td><%= data.bid %></td>
+                                <td><img id="small_Image" src=<%= data.image_small %> /></td>
+                                <td><img src=<%= data.image %> /></td>
+                                <!-- <img src="https://images.unsplash.com/photo-1517230878791-4d28214057c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" /> 
+                                <td><img src="https://www.imagesource.com/cache/pcache2/00335740.jpg" /></td>    -->                  
+                                <td></td>
+                            </tr>
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="5">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <a id = "back" href="/artist.search"> Go back</a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+    <style>
+        #back{
+        background-color: red;
+        box-shadow: 0 5px 0 darkred;
+        color: white;
+        padding: 1em 1.5em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+        }
+
+        #small_Image{
+            width: 50%;
+            height: 50%;
+            padding:10px;
+        }
+        
+    </style>
+</html>
+
+

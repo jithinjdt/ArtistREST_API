@@ -1,0 +1,73 @@
+<h1>Artist Search </h1>
+<form name = "nameform" method = "get" action="/artist.search/"+formVal onsubmit="validate();">
+    <div>
+        <label for = "name">Give the name of the artist </label>
+        <input type="text" id="name" name="name">
+    </div>
+    <button id = 'submit' type = "submit"> Search</button>
+</form> 
+<script>
+    function validate(){
+    formVal = document.getElementById('name').value;
+    document.forms["nameform"].action="/artist.search/"+ formVal;
+    }
+    </script>
+
+<form name ="filename" method = "get" action="/artist/save"+formVal onsubmit="filefunc();">
+    <div>
+        <label for = "filename">Name of the file</label>
+        <input type="filename" id =filename name="filename" >
+    </div>
+    <button id='submit' type="submit">Save</button>
+</form>
+<script>
+    function filefunc(){
+    formVal = document.getElementById('filename').value;
+    document.forms["filename"].action="/artist/save/"+ formVal;
+    }
+    </script>
+<style>
+    #submit{
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: large
+    }
+
+    #filename{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #name{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+  
+    }
+    h1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: xx-large;
+    }
+    
+</style>
