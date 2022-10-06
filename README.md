@@ -12,11 +12,6 @@ image)
 **Programming Language:** JavaScript (NodeJS)
 **Authors:** Jithin Joseph
 
-### Built With
-
-[node.js] - evented I/O for the backend
-[Express] - fast node.js network app framework 
-
 ## Features
 
 * Search for an artist by name based on the following endpoint artist.search, return all the
