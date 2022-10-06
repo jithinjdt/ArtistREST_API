@@ -50,8 +50,10 @@ var config={
 ```
 6. Run sample app from the command line using **npm run devStart** in the terminal
 7. Open http://localhost:8888/artist.search Url to direct to the index page 
-8.Give the name of the artist in the input box **Give the name of the artist** and click **Search**
-```(Names that exist in the database are "Liam", "Emma", "Amelia", "Mia", "Sandy", "Mary", "WIlliam", "Lucas")```
+8.Give the name of the artist in the input box **Give the name of the artist** and click **Search**.
+```
+(Names that exist in the database are "Liam", "Emma", "Amelia", "Mia", "Sandy", "Mary", "WIlliam", "Lucas")
+```
 8. Click on **Go back** button to go back to the page http://localhost:8888/artist.search
 9. Repeat artist search until necessary.
 10. Give the csv file name inside the input box **Name of the file** and click on save. 
