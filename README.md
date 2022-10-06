@@ -1,8 +1,6 @@
 # Node.JS REST API application 
 
-This project was written as a coding backend challenge for Incedo Services GmbH on how to create a 
-
-Node.JS REST API. Every part of this project is a sample code on how to do the following.
+This project was written as a coding backend challenge for **Incedo Services GmbH** on how to create a Node.JS REST API. Every part of this project is a sample code on how to do the following.
 * Search for an artist by name based on the following endpoint artist.search, return all the
 results for this artist.
 * Writes the result to a user-supplied CSV filename.
