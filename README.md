@@ -52,7 +52,7 @@ var config={
 7. Open http://localhost:8888/artist.search Url to direct to the index page 
 8.Give the name of the artist in the input box **Give the name of the artist** and click **Search**.
 ```
-(Names that exist in the database are "Liam", "Emma", "Amelia", "Mia", "Sandy", "Mary", "WIlliam", "Lucas")
+(Names that exist in the database are "Liam", "Emma", "Amelia", "Mia", "Sandy", "Mary", "WIlliam" and "Lucas")
 ```
 8. Click on **Go back** button to go back to the page http://localhost:8888/artist.search
 9. Repeat artist search until necessary.
