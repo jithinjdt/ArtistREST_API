@@ -9,10 +9,10 @@ results for this artist.
 * The CSV file should include the following information (name, mbid, url, image_small,
 image)
 
-```**Applies to:** SQL Server 2019 (or higher)
-**Key features:** JSON Functions in SQL Server 2019 
-**Programming Language:** JavaScript (NodeJS)
-**Authors:** Jithin Joseph
+```Applies to: SQL Server 2019 (or higher)
+Key features: JSON Functions in SQL Server 2019 
+Programming Language: JavaScript (NodeJS)
+Authors: Jithin Joseph
 ```
 
 ## How to install this project 
