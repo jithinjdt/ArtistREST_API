@@ -1,7 +1,9 @@
 # Node.JS REST API application 
 
 This project was written as a coding backend challenge for **Incedo Services GmbH** on how to create a Node.JS REST API. Every part of this project is a sample code on how to do the following.
-* Search for an artist by name based on the following endpoint artist.search, return all the
+
+## Features
+* Search for an artist by name based on the following endpoint **artist.search**, return all the
 results for this artist.
 * Writes the result to a user-supplied CSV filename.
 * The CSV file should include the following information (name, mbid, url, image_small,
@@ -12,17 +14,9 @@ image)
 **Programming Language:** JavaScript (NodeJS)
 **Authors:** Jithin Joseph
 
-## Features
-
-* Search for an artist by name based on the following endpoint artist.search, return all the
-results for this artist.
-* Writes the result to a user-supplied CSV filename.
-* The CSV file should include the following information (name, mbid, url, image_small,
-image)
-
 ## How to install this project 
 
-1. Navigate to the folder where you have downloaded sample and run **npm install** in command window.
+1. Navigate to the folder where you have downloaded sample and open the command window.
 2. From SQL Server Management Studio or SQL Server Data Tools connect to your SQL Server 2019.
 3. Create a dababase using SQL Server Management Studio. (default name given in the configurataion file is **ArtistsDB**)
 4. Use the sql script from setup folder and run the query inside the database to create a table **artists** with all the values in it.
@@ -41,11 +35,11 @@ var config={
         }
 }
 ```
-6. Run sample app from the command line using **npm run devStart** in the terminal
+6. Run sample app from the command line using **"npm run devStart"** in the terminal
 7. Open http://localhost:8888/artist.search Url to direct to the index page 
 8.Give the name of the artist in the input box **Give the name of the artist** and click **Search**.
 ```
-(Names that exist in the database are "Liam", "Emma", "Amelia", "Mia", "Sandy", "Mary", "WIlliam" and "Lucas")
+(Names that exist in the database are "Liam", "Emma", "Amelia", "Mia", "Sandy", "Mary", "WIlliam" and "Lucas", or use any other name to generate a random name from the system)
 ```
 8. Click on **Go back** button to go back to the page http://localhost:8888/artist.search
 9. Repeat artist search until necessary.
