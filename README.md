@@ -12,7 +12,8 @@ image)
 ```**Applies to:** SQL Server 2019 (or higher)
 **Key features:** JSON Functions in SQL Server 2019 
 **Programming Language:** JavaScript (NodeJS)
-**Authors:** Jithin Joseph```
+**Authors:** Jithin Joseph
+```
 
 ## How to install this project 
 
