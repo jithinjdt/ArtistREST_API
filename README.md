@@ -47,5 +47,8 @@ var config={
 10. Give the csv file name inside the input box **Name of the file** and click on save. 
 11. The csv file with the given name will be saved in the same directory. 
 
+##API Documentaion 
+[API Doc using Postman](https://documenter.getpostman.com/view/19024485/2s83zgsjBe#2b070ac6-b20e-47a6-bfc0-76243b4620d9)
+
 
 
